@@ -1,0 +1,6 @@
+dist
+.git
+.env
+.env.*
+.idea
+.DS_Store
