@@ -2,5 +2,6 @@ dist
 .git
 .env
 .env.*
+!.env.example
 .idea
 .DS_Store
