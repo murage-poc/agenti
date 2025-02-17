@@ -1,0 +1,14 @@
+services:
+  archgw:
+    image: katanemo/archgw:latest
+    ports:
+      - "8080:8080"
+      - "12000:12000"
+    volumes:
+      - ./arch_config.yaml:/app/arch_config.yaml
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:?error}
+  agenti:
+    image: docker.io/library/demo
