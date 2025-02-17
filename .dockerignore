@@ -1,0 +1,9 @@
+tools
+dist
+.git
+arch.yaml
+.env
+.env.*
+.idea
+.DS_Store
+.gitignore
