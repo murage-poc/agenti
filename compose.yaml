@@ -1,6 +1,6 @@
 services:
   archgw:
-    image: katanemo/archgw:latest
+    image: docker.io/katanemo/archgw:latest
     ports:
       - "8080:8080"
       - "12000:12000"
@@ -11,8 +11,9 @@ services:
       - MODEL_SERVER_PORT=${MODEL_SERVER_PORT:-51001} #confirm why it fails without this
     networks:
       - bluebell
+
   agenti:
-    image: docker.io/library/demo
+    image: agenti:latest #built using `make build:docker` command
     networks:
       - bluebell
 
