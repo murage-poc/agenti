@@ -8,10 +8,10 @@ listeners:
     timeout: 30s
 
 llm_providers:
-    - name: gpt-4o
-      access_key: $OPENAI_API_KEY
-      provider: openai
-      model: gpt-4o
+  - name: gpt-4o
+    access_key: $OPENAI_API_KEY
+    provider: openai
+    model: gpt-4o
 
 system_prompt: |
   You are a helpful assistant.
