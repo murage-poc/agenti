@@ -35,7 +35,7 @@ func serverAddress() string {
 
 	host, found := os.LookupEnv("HOST")
 	if !found {
-		host = "localhost"
+		host = "0.0.0.0"
 	}
 
 	return net.JoinHostPort(host, port)
