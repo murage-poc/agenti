@@ -42,11 +42,11 @@ prompt_targets:
     description: Get list of supported currencies for conversion
     endpoint:
       name: agenti_api
-      path: /v1/currencies
+      path: /api/v1/currencies
 
 endpoints:
   agenti_api:
-    endpoint: agenti:8000/api
+    endpoint: agenti:8000
     protocol: http
   frankfurt_api:
       endpoint: api.frankfurter.dev
